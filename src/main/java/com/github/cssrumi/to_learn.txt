@@ -16,5 +16,6 @@ https://www.packtpub.com/mapt/book/application_development/9781785286124/2/ch02l
 Threads
 https://stackoverflow.com/questions/4053982/how-to-have-2-threads-talk-to-each-other
 https://www.quora.com/How-do-Java-threads-communicate-with-each-other
+https://www.geeksforgeeks.org/inter-thread-communication-java/
 
 https://en.wikipedia.org/wiki/Mediator_pattern
