@@ -37,7 +37,8 @@ public class KafkaChatConsumer {
                     consumer.poll(Duration.ofMillis(100)); // new in Kafka 2.0.0
 
             for (ConsumerRecord<String, String> record : records) {
-                System.out.println(record);
+//                System.out.println(record);
+                System.out.println("Key: " + record.key() + ", Value: " + record.value());
             }
         }
     }
