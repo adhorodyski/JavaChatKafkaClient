@@ -51,28 +51,10 @@ public class JavaClient {
             }
         });
 
-//        Thread consumerThread = new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                try {
-//                    consumer();
-//                } catch (InterruptedException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        });
 
         mainFrameThread.start();
         kafkaThread.start();
-//        consumerThread.start();
 
     }
 
-//    private static void consumer() throws InterruptedException {
-//        while(true) {
-//            String message = messages.take();
-//            System.out.println(message);
-//        }
-//
-//    }
 }
