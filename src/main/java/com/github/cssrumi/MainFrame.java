@@ -16,6 +16,14 @@ public class MainFrame extends JFrame {
         chatPanel = new ChatPanel();
         formPanel = new FormPanel();
 
+        formPanel.setFormListener(new FormListener() {
+            public void formEventOccurred(FormEvent e) {
+                String message = e.getMessage();
+
+                chatPanel.appendText(message + "\n");
+            }
+        });
+
         add(chatPanel, BorderLayout.CENTER);
         add(formPanel, BorderLayout.SOUTH);
 

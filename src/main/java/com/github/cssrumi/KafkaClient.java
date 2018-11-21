@@ -16,17 +16,21 @@ public class KafkaClient {
     private String bootstrapServers;
     private String topic;
     private String groupId;
+    private KafkaConsumer<String, String> consumer;
+    private BlockingQueue<String> messages;
+    private Properties properties;
 
-    public KafkaClient(BlockingQueue<String> messeges) {
+    public KafkaClient(BlockingQueue<String> messages) {
 
-
-        groupId = "default";
-        System.out.println(groupId);
+        this.messages = messages;
 
         bootstrapServers = "localhost:9092";
+        groupId = "default";
         topic = "test";
+    }
 
-        Properties properties = new Properties();
+    public void setup() {
+        properties = new Properties();
         properties.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
         properties.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         properties.setProperty(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
@@ -34,21 +38,27 @@ public class KafkaClient {
         properties.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "latest");
 
         // create consumer
-        KafkaConsumer<String, String> consumer = new KafkaConsumer<>(properties);
+        consumer = new KafkaConsumer<>(properties);
 
         // subscribe consumer to our topic(s)
         consumer.subscribe(Arrays.asList(topic));
+    }
 
-        // poll for new data
+    public void setBootstrapServers(String bootstrapServers) {
+        this.bootstrapServers = bootstrapServers;
+    }
+
+    // poll for new data
+    public void putMessages(){
         while (true) {
             ConsumerRecords<String, String> records =
                     consumer.poll(Duration.ofMillis(100)); // new in Kafka 2.0.0
 
             for (ConsumerRecord<String, String> record : records) {
 //                System.out.println(record);
-                System.out.println("Key: " + record.key() + ", Value: " + record.value());
+//                System.out.println("Key: " + record.key() + ", Value: " + record.value());
                 try {
-                    messeges.put(record.value());
+                    messages.put(record.value());
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
