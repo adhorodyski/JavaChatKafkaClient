@@ -1,5 +1,7 @@
 package com.github.cssrumi;
 
+import com.github.cssrumi.user.UserPanel;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.concurrent.BlockingQueue;

@@ -1,5 +1,7 @@
 package com.github.cssrumi;
 
+import com.github.cssrumi.user.UserEvent;
+import com.github.cssrumi.user.UserListener;
 import com.github.cssrumi.user.UserPanel;
 
 import javax.swing.*;
@@ -22,11 +24,21 @@ public class FormPanel extends JPanel{
         sendBtn = new JButton("SEND");
         userPanel = new UserPanel();
 
+        userPanel.setUserListener(new UserListener() {
+            @Override
+            public void userEventOccurred(UserEvent e) {
+                String username = e.getUsername();
+
+                userPanel.checkUsername(username);
+                }
+            }
+        );
+
         setLayout(new BorderLayout());
 
+        add(userPanel, BorderLayout.WEST);
         add(messageField, BorderLayout.CENTER);
         add(sendBtn, BorderLayout.EAST);
-        add(userPanel, BorderLayout.WEST);
 
         sendBtn.addActionListener(new ActionListener() {
             @Override

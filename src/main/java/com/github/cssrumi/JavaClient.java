@@ -6,13 +6,14 @@ import java.util.concurrent.BlockingQueue;
 
 public class JavaClient {
 
+    private static String serverIP;
     private static BlockingQueue<String> messages = new ArrayBlockingQueue<>(10);
 
     public static void main(String[] args) {
 
-
+        setServerIP("10.111.120.19");
         KafkaClient kafkaClient = new KafkaClient(messages);
-        kafkaClient.setBootstrapServers("localhost:9092");
+        kafkaClient.setBootstrapServers(getServerIP() + ":9092");
         kafkaClient.setup();
 
         Thread mainFrameThread = new Thread(new Runnable() {
@@ -55,6 +56,14 @@ public class JavaClient {
         mainFrameThread.start();
         kafkaThread.start();
 
+    }
+
+    public static String getServerIP(){
+        return serverIP;
+    }
+
+    public static void setServerIP(String IP){
+        serverIP = IP;
     }
 
 }
