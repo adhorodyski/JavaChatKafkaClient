@@ -1,7 +1,5 @@
 package com.github.cssrumi.user;
 
-import com.github.cssrumi.FormEvent;
-import com.github.cssrumi.FormListener;
 import com.github.cssrumi.JavaClient;
 
 import javax.swing.*;
@@ -52,9 +50,9 @@ public class UserPanel extends JPanel {
         });
     }
 
-    public String checkUsername(String username){
-        checker.validate(username);
-        return null;
+    public String checkUserAndGetToken(String username){
+        token = checker.ifValidGetToken(username);
+        return token;
     }
 
     public void setUserListener(UserListener listener) {

@@ -1,6 +1,7 @@
 package com.github.cssrumi;
 
-import javax.swing.*;
+import com.github.cssrumi.kafka.KafkaClient;
+
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 

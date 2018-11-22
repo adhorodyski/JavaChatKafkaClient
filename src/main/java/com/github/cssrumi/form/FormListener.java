@@ -1,4 +1,4 @@
-package com.github.cssrumi;
+package com.github.cssrumi.form;
 
 import java.util.EventListener;
 

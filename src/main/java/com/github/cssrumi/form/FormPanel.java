@@ -1,4 +1,4 @@
-package com.github.cssrumi;
+package com.github.cssrumi.form;
 
 import com.github.cssrumi.user.UserEvent;
 import com.github.cssrumi.user.UserListener;
@@ -15,6 +15,7 @@ public class FormPanel extends JPanel{
     private JButton sendBtn;
     private FormListener formListener;
     private UserPanel userPanel;
+    private String token;
 
     public FormPanel() {
         Dimension dim = getPreferredSize();
@@ -29,7 +30,9 @@ public class FormPanel extends JPanel{
             public void userEventOccurred(UserEvent e) {
                 String username = e.getUsername();
 
-                userPanel.checkUsername(username);
+                token = userPanel.checkUserAndGetToken(username);
+                if(token != null)
+                    userPanel.setUsername(username);
                 }
             }
         );
@@ -57,5 +60,8 @@ public class FormPanel extends JPanel{
     public void setFormListener(FormListener listener) {
         this.formListener = listener;
     }
+
+    public String getUsername() { return userPanel.getUsername(); }
+    public String getToken() { return userPanel.getToken(); }
 
 }

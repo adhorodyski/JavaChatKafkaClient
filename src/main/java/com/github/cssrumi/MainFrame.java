@@ -1,10 +1,13 @@
 package com.github.cssrumi;
 
-import com.github.cssrumi.user.UserPanel;
+import com.github.cssrumi.chat.ChatPanel;
+import com.github.cssrumi.chat.Message;
+import com.github.cssrumi.form.FormEvent;
+import com.github.cssrumi.form.FormListener;
+import com.github.cssrumi.form.FormPanel;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.concurrent.BlockingQueue;
 
 public class MainFrame extends JFrame {
 
@@ -21,8 +24,12 @@ public class MainFrame extends JFrame {
         formPanel.setFormListener(new FormListener() {
             public void formEventOccurred(FormEvent e) {
                 String message = e.getMessage();
-
-                chatPanel.appendText(message + "\n");
+                chatPanel.sendMessage(
+                        Message.createJsonMessage(
+                                formPanel.getUsername(),
+                                message,
+                                formPanel.getToken())
+                );
             }
         });
 
