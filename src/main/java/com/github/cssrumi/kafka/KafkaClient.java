@@ -6,6 +6,9 @@ import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.common.serialization.StringDeserializer;
 
+import java.io.InputStream;
+import java.math.BigInteger;
+import java.nio.charset.Charset;
 import java.time.Duration;
 import java.util.Arrays;
 import java.util.Properties;
@@ -29,8 +32,7 @@ public class KafkaClient {
         Random random = new Random();
         byte[] b = new byte[20];
         random.nextBytes(b);
-        groupId = b.toString();
-        System.out.println(b);
+        groupId = "default";
         topic = "test";
     }
 
@@ -69,5 +71,11 @@ public class KafkaClient {
                 }
             }
         }
+    }
+    public void setRandomGroup() {
+        byte[] b = new byte[20];
+        new Random().nextBytes(b);
+        String str = new String(b, Charset.forName("unicode"));
+        groupId = str;
     }
 }

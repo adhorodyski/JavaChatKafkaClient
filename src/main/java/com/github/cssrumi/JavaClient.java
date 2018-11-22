@@ -15,6 +15,7 @@ public class JavaClient {
         setServerIP("10.111.120.19");
         KafkaClient kafkaClient = new KafkaClient(messages);
         kafkaClient.setBootstrapServers(getServerIP() + ":9092");
+        kafkaClient.setRandomGroup();
         kafkaClient.setup();
 
         Thread mainFrameThread = new Thread(new Runnable() {
