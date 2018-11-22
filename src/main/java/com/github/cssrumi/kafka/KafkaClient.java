@@ -9,6 +9,7 @@ import org.apache.kafka.common.serialization.StringDeserializer;
 import java.time.Duration;
 import java.util.Arrays;
 import java.util.Properties;
+import java.util.Random;
 import java.util.concurrent.BlockingQueue;
 
 public class KafkaClient {
@@ -25,7 +26,11 @@ public class KafkaClient {
         this.messages = messages;
 
         bootstrapServers = "localhost:9092";
-        groupId = "default";
+        Random random = new Random();
+        byte[] b = new byte[20];
+        random.nextBytes(b);
+        groupId = b.toString();
+        System.out.println(b);
         topic = "test";
     }
 
