@@ -4,4 +4,4 @@
 
 # Build
 
-        mvn compile assembly:single
+    mvn compile assembly:single
