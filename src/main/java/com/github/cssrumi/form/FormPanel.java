@@ -43,7 +43,7 @@ public class FormPanel extends JPanel {
         addMessageKeyListener();
     }
 
-    public void addMessageKeyListener() {
+    private void addMessageKeyListener() {
         messageField.addKeyListener(new KeyListener() {
             @Override
             public void keyTyped(KeyEvent e) {
@@ -71,7 +71,7 @@ public class FormPanel extends JPanel {
         });
     }
 
-    public void addSendListener() {
+    private void addSendListener() {
         sendBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -87,7 +87,7 @@ public class FormPanel extends JPanel {
         });
     }
 
-    public void addChangeUserListener() {
+    private void addChangeUserListener() {
         changeUserPanel.setChangeUserListener(new ChangeUserListener() {
             @Override
             public void changeUserEventOccurred(ChangeUserEvent e) {
@@ -101,7 +101,7 @@ public class FormPanel extends JPanel {
         });
     }
 
-    public void addUserListener() {
+    private void addUserListener() {
         userPanel.setUserListener(new UserListener() {
             @Override
             public void userEventOccurred(UserEvent e) {
@@ -120,22 +120,22 @@ public class FormPanel extends JPanel {
         });
     }
 
-    public void addChangeUserPanel() {
+    private void addChangeUserPanel() {
         changeUserPanel.setUsername(user.getUsername());
         add(changeUserPanel, BorderLayout.WEST);
     }
 
-    public void addUserPanel() {
+    private void addUserPanel() {
         add(userPanel, BorderLayout.WEST);
         user.setToken("");
         user.setUsername("");
     }
 
-    public void removeChangeUserPanel() {
+    private void removeChangeUserPanel() {
         remove(changeUserPanel);
     }
 
-    public void removeUserPanel() {
+    private void removeUserPanel() {
         remove(userPanel);
     }
 
