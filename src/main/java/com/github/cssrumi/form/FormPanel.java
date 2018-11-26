@@ -6,6 +6,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
 public class FormPanel extends JPanel {
 
@@ -38,6 +40,35 @@ public class FormPanel extends JPanel {
         add(sendBtn, BorderLayout.EAST);
 
         addSendListener();
+        addMessageKeyListener();
+    }
+
+    public void addMessageKeyListener() {
+        messageField.addKeyListener(new KeyListener() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+
+            }
+
+            @Override
+            public void keyPressed(KeyEvent e) {
+
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e) {
+                if (e.getKeyCode()==KeyEvent.VK_ENTER){
+                    String message = messageField.getText();
+
+                    FormEvent ev = new FormEvent(this, message);
+
+                    if (formListener != null && !message.equals("") && !user.getUsername().equals("")) {
+                        formListener.formEventOccurred(ev);
+                        messageField.setText("");
+                    }
+                }
+            }
+        });
     }
 
     public void addSendListener() {
@@ -48,7 +79,7 @@ public class FormPanel extends JPanel {
 
                 FormEvent ev = new FormEvent(this, message);
 
-                if (formListener != null && !message.equals("")) {
+                if (formListener != null && !message.equals("") && !user.getUsername().equals("")) {
                     formListener.formEventOccurred(ev);
                     messageField.setText("");
                 }
