@@ -1,21 +1,19 @@
 package com.github.cssrumi.form;
 
-import com.github.cssrumi.user.User;
-import com.github.cssrumi.user.UserEvent;
-import com.github.cssrumi.user.UserListener;
-import com.github.cssrumi.user.SetUserPanel;
+import com.github.cssrumi.user.*;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class FormPanel extends JPanel{
+public class FormPanel extends JPanel {
 
     private JTextField messageField;
     private JButton sendBtn;
     private FormListener formListener;
-    private SetUserPanel setUserPanel;
+    private UserPanel userPanel;
+    private ChangeUserPanel changeUserPanel;
     private User user;
     private String token;
 
@@ -27,26 +25,22 @@ public class FormPanel extends JPanel{
         sendBtn = new JButton("SEND");
 
         user = new User();
-        setUserPanel = new SetUserPanel();
-        setUserPanel.setUserListener(new UserListener() {
-            @Override
-            public void userEventOccurred(UserEvent e) {
-                String username = e.getUsername();
+        userPanel = new UserPanel();
+        changeUserPanel = new ChangeUserPanel();
 
-                token = setUserPanel.checkUserAndGetToken(username);
-                if(token != null)
-                    user.setToken(token);
-                    user.setUsername(username);
-                }
-            }
-        );
+        addUserListener();
+        addChangeUserListener();
 
         setLayout(new BorderLayout());
 
-        add(setUserPanel, BorderLayout.WEST);
+        addUserPanel();
         add(messageField, BorderLayout.CENTER);
         add(sendBtn, BorderLayout.EAST);
 
+        addSendListener();
+    }
+
+    public void addSendListener() {
         sendBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -54,7 +48,7 @@ public class FormPanel extends JPanel{
 
                 FormEvent ev = new FormEvent(this, message);
 
-                if(formListener != null && !message.equals("")) {
+                if (formListener != null && !message.equals("")) {
                     formListener.formEventOccurred(ev);
                     messageField.setText("");
                 }
@@ -62,16 +56,68 @@ public class FormPanel extends JPanel{
         });
     }
 
-    public void changeUserPanel()
-    {
+    public void addChangeUserListener() {
+        changeUserPanel.setChangeUserListener(new ChangeUserListener() {
+            @Override
+            public void changeUserEventOccurred(ChangeUserEvent e) {
+                removeChangeUserPanel();
+                addUserPanel();
+                user.clear();
+                userPanel.clear();
+                revalidate();
+                repaint();
+            }
+        });
+    }
 
+    public void addUserListener() {
+        userPanel.setUserListener(new UserListener() {
+            @Override
+            public void userEventOccurred(UserEvent e) {
+                String username = e.getUsername();
+
+                token = user.checkUserAndGetToken(username);
+                if (token != null && !token.equals("")) {
+                    user.setToken(token);
+                    user.setUsername(username);
+                    removeUserPanel();
+                    addChangeUserPanel();
+                    revalidate();
+                    repaint();
+                }
+            }
+        });
+    }
+
+    public void addChangeUserPanel() {
+        changeUserPanel.setUsername(user.getUsername());
+        add(changeUserPanel, BorderLayout.WEST);
+    }
+
+    public void addUserPanel() {
+        add(userPanel, BorderLayout.WEST);
+        user.setToken("");
+        user.setUsername("");
+    }
+
+    public void removeChangeUserPanel() {
+        remove(changeUserPanel);
+    }
+
+    public void removeUserPanel() {
+        remove(userPanel);
     }
 
     public void setFormListener(FormListener listener) {
         this.formListener = listener;
     }
 
-    public String getUsername() { return user.getUsername(); }
-    public String getToken() { return user.getToken(); }
+    public String getUsername() {
+        return user.getUsername();
+    }
+
+    public String getToken() {
+        return user.getToken();
+    }
 
 }

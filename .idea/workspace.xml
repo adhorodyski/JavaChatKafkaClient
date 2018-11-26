@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1286d3e-e653-4ec3-914d-c37ee3c134b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/chat/SmartScroller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/SetUserPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/ChangeUserEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/ChangeUserListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/JavaClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/JavaClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/chat/ChatPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/chat/ChatPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/chat/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/chat/Message.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/form/FormPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/form/FormPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/kafka/KafkaClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/kafka/KafkaClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/request/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/request/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/SetUserPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/ChangeUserPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/UserPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/UserPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/UsernameChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/UsernameChecker.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,8 +43,8 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="MF" value="34" />
-          <entry key="dummy" value="76" />
-          <entry key="java" value="6176" />
+          <entry key="dummy" value="88" />
+          <entry key="java" value="7075" />
           <entry key="md" value="80" />
           <entry key="txt" value="72" />
           <entry key="xml" value="141" />
@@ -53,9 +52,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6176" />
+          <entry key="JAVA" value="7075" />
           <entry key="Manifest" value="34" />
-          <entry key="PLAIN_TEXT" value="228" />
+          <entry key="PLAIN_TEXT" value="240" />
           <entry key="XML" value="141" />
         </counts>
       </usages-collector>
@@ -63,7 +62,7 @@
         <counts>
           <entry key="MF" value="1" />
           <entry key="class" value="2" />
-          <entry key="java" value="50" />
+          <entry key="java" value="56" />
           <entry key="md" value="1" />
           <entry key="txt" value="1" />
           <entry key="xml" value="1" />
@@ -72,7 +71,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="50" />
+          <entry key="JAVA" value="56" />
           <entry key="Manifest" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="1" />
@@ -85,22 +84,23 @@
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/JavaClient.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/UserPanel.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-68">
-                  <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+                <state relative-caret-position="486">
+                  <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
                   <folding>
-                    <element signature="imports" expanded="true" />
+                    <element signature="e#1275#1276#0" expanded="true" />
+                    <element signature="e#1310#1311#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/SetUserPanel.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/User.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="421">
-                  <caret line="68" selection-start-line="68" selection-end-line="68" />
+                <state relative-caret-position="476">
+                  <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -114,91 +114,68 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/form/FormListener.java">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/UsernameChecker.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/MainFrame.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/chat/ChatPanel.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="418">
-                  <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+                <state relative-caret-position="323">
+                  <caret line="33" column="48" lean-forward="true" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#902#903#0" expanded="true" />
-                    <element signature="e#945#946#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/form/FormPanel.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="224">
-                  <caret line="56" column="63" lean-forward="true" selection-start-line="56" selection-start-column="63" selection-end-line="56" selection-end-column="63" />
+                <state relative-caret-position="207">
+                  <caret line="65" column="30" lean-forward="true" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="e#2477#2478#0" expanded="true" />
+                    <element signature="e#2516#2517#0" expanded="true" />
+                    <element signature="e#2553#2554#0" expanded="true" />
+                    <element signature="e#2586#2587#0" expanded="true" />
+                    <element signature="e#2644#2645#0" expanded="true" />
+                    <element signature="e#2688#2689#0" expanded="true" />
+                    <element signature="e#2723#2724#0" expanded="true" />
+                    <element signature="e#2764#2765#0" expanded="true" />
+                    <element signature="e#2796#2797#0" expanded="true" />
+                    <element signature="e#2834#2835#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/UserPanel.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/ChangeUserPanel.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="629">
-                  <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+                <state relative-caret-position="445">
+                  <caret line="53" column="53" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="e#1289#1290#0" expanded="true" />
+                    <element signature="e#1332#1333#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/User.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/ChangeUserListener.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="85">
-                  <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-                  <folding>
-                    <element signature="e#181#182#0" expanded="true" />
-                    <element signature="e#212#213#0" expanded="true" />
-                    <element signature="e#260#261#0" expanded="true" />
-                    <element signature="e#300#301#0" expanded="true" />
-                    <element signature="e#332#333#0" expanded="true" />
-                    <element signature="e#360#361#0" expanded="true" />
-                    <element signature="e#402#403#0" expanded="true" />
-                    <element signature="e#436#437#0" expanded="true" />
-                  </folding>
+                  <caret line="5" column="39" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="39" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/chat/MessageSender.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/ChangeUserEvent.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#455#456#0" expanded="true" />
-                    <element signature="e#496#497#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="102">
+                  <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
@@ -208,35 +185,13 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/pom.xml">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/UserPanel.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="537">
-                  <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/kafka/KafkaClient.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-21">
-                  <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+                <state relative-caret-position="469">
+                  <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
                   <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#1784#1785#0" expanded="true" />
-                    <element signature="e#1823#1824#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/UsernameChecker.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="442">
-                  <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
+                    <element signature="e#1275#1276#0" expanded="true" />
+                    <element signature="e#1310#1311#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -256,6 +211,29 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="136">
                   <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pom.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="537">
+                  <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/kafka/KafkaClient.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-21">
+                  <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#1784#1785#0" expanded="true" />
+                    <element signature="e#1823#1824#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -306,18 +284,21 @@
         <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/chat/SendMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/chat/MessageSender.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/MainFrame.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/UsernameChecker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/request/Post.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/chat/SmartScroller.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/JavaClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/kafka/KafkaClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/chat/Message.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/chat/ChatPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/UserPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/SetUserPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/ChangeUserListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/ChangeUserEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/ChangeUserPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/form/FormPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/UserPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/request/Post.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/UsernameChecker.java" />
       </list>
     </option>
   </component>
@@ -424,6 +405,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cssrumi" type="462c0819:PsiDirectoryNode" />
+              <item name="request" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaChatKafkaClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaChatKafkaClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cssrumi" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -441,7 +431,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543234446996" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543240550011" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -567,13 +557,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32948583" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.3286334" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49840087" visible="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39979014" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286334" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4989339" weight="0.34056398" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.3286334" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49840087" weight="0.34056398" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50159913" side_tool="true" visible="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3286334" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -583,7 +573,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.25692964" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.25692964" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -651,56 +641,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/UsernameChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/UserListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/UserEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/request/Post.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="39" column="58" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/kafka/KafkaClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1784#1785#0" expanded="true" />
-            <element signature="e#1823#1824#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -735,13 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/JavaClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-68">
@@ -752,56 +689,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#181#182#0" expanded="true" />
-            <element signature="e#212#213#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/UserPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/SetUserPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/chat/ChatPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#902#903#0" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -824,6 +715,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/ChangeUserEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/ChangeUserListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/kafka/KafkaClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21">
+          <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1784#1785#0" expanded="true" />
+            <element signature="e#1823#1824#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/UserEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/UserListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/ChangeUserPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="53" column="53" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1289#1290#0" expanded="true" />
+            <element signature="e#1332#1333#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/form/FormEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -831,10 +788,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/UserPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+          <folding>
+            <element signature="e#1275#1276#0" expanded="true" />
+            <element signature="e#1310#1311#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/request/Post.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="49" column="61" lean-forward="true" selection-start-line="49" selection-start-column="61" selection-end-line="49" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/chat/ChatPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/form/FormPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="56" column="63" lean-forward="true" selection-start-line="56" selection-start-column="63" selection-end-line="56" selection-end-column="63" />
+        <state relative-caret-position="207">
+          <caret line="65" column="30" lean-forward="true" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2477#2478#0" expanded="true" />
+            <element signature="e#2516#2517#0" expanded="true" />
+            <element signature="e#2553#2554#0" expanded="true" />
+            <element signature="e#2586#2587#0" expanded="true" />
+            <element signature="e#2644#2645#0" expanded="true" />
+            <element signature="e#2688#2689#0" expanded="true" />
+            <element signature="e#2723#2724#0" expanded="true" />
+            <element signature="e#2764#2765#0" expanded="true" />
+            <element signature="e#2796#2797#0" expanded="true" />
+            <element signature="e#2834#2835#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/UsernameChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="33" column="48" lean-forward="true" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,5 +1,6 @@
 package com.github.cssrumi.user;
 
+import com.github.cssrumi.JavaClient;
 import com.github.cssrumi.request.Post;
 import org.json.JSONObject;
 
@@ -10,7 +11,8 @@ public class UsernameChecker {
     private Post setUserPost;
     private JSONObject resultJson;
 
-    public UsernameChecker(String ip){
+    public UsernameChecker(){
+        String ip = JavaClient.getServerIP();
         setUserRequest = "http://" + ip +":5000/api/user/set_user";
         setUserPost = new Post(setUserRequest);
     }
@@ -28,8 +30,13 @@ public class UsernameChecker {
     }
 
     public void setToken(String result){
-        resultJson = new JSONObject(result);
-        token = resultJson.getString("token");
+        if(!result.equals("") && result != null){
+            resultJson = new JSONObject(result);
+            token = resultJson.getString("token");
+        }
+        else {
+            token = "";
+        }
     }
 
 }

@@ -3,8 +3,17 @@ package com.github.cssrumi.user;
 public class User {
     private String username;
     private String token;
+    private UsernameChecker checker;
+    private String result;
 
     public User(){
+        checker = new UsernameChecker();
+        result = "";
+    }
+
+    public String checkUserAndGetToken(String username){
+        result = checker.ifValidGetToken(username);
+        return result;
     }
 
     public String getUsername() {
@@ -21,5 +30,10 @@ public class User {
 
     public void setToken(String token) {
         this.token = token;
+    }
+
+    public void clear() {
+        setUsername("");
+        setToken("");
     }
 }

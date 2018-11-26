@@ -48,6 +48,7 @@ public class Post {
                 result = stringBuilder.toString();
             } else {
                 System.out.println(con.getResponseMessage());
+                result = "";
             }
         } catch (Exception e) {
             e.printStackTrace();

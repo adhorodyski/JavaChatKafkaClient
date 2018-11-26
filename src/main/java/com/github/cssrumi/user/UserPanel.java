@@ -1,5 +1,7 @@
 package com.github.cssrumi.user;
 
+import com.github.cssrumi.JavaClient;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -7,11 +9,8 @@ import java.awt.event.ActionListener;
 
 public class UserPanel extends JPanel {
     private JTextField userField;
-    private JButton changeBtn;
+    private JButton setBtn;
     private UserListener userListener;
-    private String token;
-    private String username;
-    private UsernameChecker checker;
 
     public UserPanel() {
         init();
@@ -24,16 +23,16 @@ public class UserPanel extends JPanel {
         dim.height = 200;
 
         userField = new JTextField(10);
-        changeBtn = new JButton("Change");
+        setBtn = new JButton("Set Nick");
 
         setLayout(new BorderLayout());
 
         add(userField, BorderLayout.CENTER);
-        add(changeBtn, BorderLayout.EAST);
+        add(setBtn, BorderLayout.EAST);
     }
 
     private void actionInit() {
-        changeBtn.addActionListener(new ActionListener() {
+        setBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String username = userField.getText();
@@ -47,28 +46,12 @@ public class UserPanel extends JPanel {
         });
     }
 
-    public String checkUserAndGetToken(String username){
-        token = checker.ifValidGetToken(username);
-        return token;
-    }
 
     public void setUserListener(UserListener listener) {
         this.userListener = listener;
     }
 
-    public String getToken() {
-        return token;
-    }
-
-    public void setToken(String token) {
-        this.token = token;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
+    public void clear() {
+        userField.setText("");
     }
 }
