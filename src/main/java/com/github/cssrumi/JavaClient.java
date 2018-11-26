@@ -1,5 +1,6 @@
 package com.github.cssrumi;
 
+import com.github.cssrumi.chat.Message;
 import com.github.cssrumi.kafka.KafkaClient;
 
 import java.util.concurrent.ArrayBlockingQueue;
@@ -31,13 +32,15 @@ public class JavaClient {
             }
 
             public void sendMessage(String message){
-                mainFrame.appendMessage(message + "\n");
+                mainFrame.appendMessage(message);
             }
 
             private void consume() throws InterruptedException {
+                String message;
+                String rawMessage;
                 while (true) {
-                    String message = messages.take();
-//                    System.out.println(message);
+                    rawMessage = messages.take();
+                    message = Message.MessageParser(rawMessage);
                     sendMessage(message);
                 }
             }

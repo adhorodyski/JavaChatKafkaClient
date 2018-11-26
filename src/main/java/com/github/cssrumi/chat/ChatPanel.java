@@ -18,11 +18,10 @@ public class ChatPanel extends JPanel {
         textArea.setEditable(false);
         textArea.setLineWrap(true);
 
-        caret = (DefaultCaret)textArea.getCaret();
-        caret.setUpdatePolicy(DefaultCaret.ALWAYS_UPDATE);
-
         scrollPane = new JScrollPane(textArea);
         scrollPane.setAutoscrolls(true);
+
+        new SmartScroller(scrollPane, SmartScroller.VERTICAL, SmartScroller.END);
 
         setLayout(new BorderLayout());
 
@@ -33,6 +32,7 @@ public class ChatPanel extends JPanel {
 
     public void appendText(String text) {
         textArea.append(text);
+
     }
 
     public void sendMessage(JSONObject message) {

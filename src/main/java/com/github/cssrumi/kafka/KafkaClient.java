@@ -29,9 +29,6 @@ public class KafkaClient {
         this.messages = messages;
 
         bootstrapServers = "localhost:9092";
-        Random random = new Random();
-        byte[] b = new byte[20];
-        random.nextBytes(b);
         groupId = "default";
         topic = "test";
     }
@@ -49,6 +46,10 @@ public class KafkaClient {
 
         // subscribe consumer to our topic(s)
         consumer.subscribe(Arrays.asList(topic));
+    }
+
+    public String getBootstrapServers() {
+        return bootstrapServers;
     }
 
     public void setBootstrapServers(String bootstrapServers) {
