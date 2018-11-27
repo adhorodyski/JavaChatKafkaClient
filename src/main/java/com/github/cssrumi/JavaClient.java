@@ -33,7 +33,6 @@ public class JavaClient {
                     public void windowClosing(WindowEvent e) {
                         super.windowClosing(e);
                         initMain();
-                        exitConfig();
                     }
                 });
             }
@@ -89,10 +88,6 @@ public class JavaClient {
 
         mainFrameThread.start();
         kafkaThread.start();
-    }
-
-    private static void exitConfig() {
-        configFrameThread.interrupt();
     }
 
     public static String getServerIP(){
