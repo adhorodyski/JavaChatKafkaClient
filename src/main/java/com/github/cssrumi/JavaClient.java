@@ -14,16 +14,13 @@ public class JavaClient {
     private static String serverIP;
     private static BlockingQueue<String> messages = new ArrayBlockingQueue<>(10);
 
-    private static Thread configFrameThread;
-
     public static void main(String[] args) {
-
         setServerIP("10.111.120.19");
         init();
     }
 
     private static void init() {
-        configFrameThread = new Thread(new Runnable() {
+        Thread configFrameThread = new Thread(new Runnable() {
             private ConfigFrame configFrame;
             @Override
             public void run() {
