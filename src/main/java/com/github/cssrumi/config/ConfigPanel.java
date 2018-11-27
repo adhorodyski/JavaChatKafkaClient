@@ -1,10 +1,10 @@
 package com.github.cssrumi.config;
 
 import com.github.cssrumi.JavaClient;
+import com.github.cssrumi.request.Get;
 
 import javax.swing.*;
 import javax.swing.border.Border;
-import javax.swing.border.TitledBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -13,6 +13,7 @@ public class ConfigPanel extends JPanel {
     private JTextField ipField;
     private JButton setBtn;
     private ConfigListener configListener;
+    private ServerChecker serverChecker;
 
     public ConfigPanel() {
         init();
@@ -21,6 +22,8 @@ public class ConfigPanel extends JPanel {
     }
 
     private void init() {
+        serverChecker = new ServerChecker();
+
         ipField = new JTextField(15);
         setBtn = new JButton("Set IP");
 
@@ -52,7 +55,14 @@ public class ConfigPanel extends JPanel {
             }
         });
     }
+
     public void setUserListener(ConfigListener listener) {
         this.configListener = listener;
     }
+
+    public boolean isValid(String ip) {
+        serverChecker.validate(ip);
+        return serverChecker.isValid();
+    }
+
 }

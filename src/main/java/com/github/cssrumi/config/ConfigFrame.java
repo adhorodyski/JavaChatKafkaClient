@@ -20,9 +20,16 @@ public class ConfigFrame extends JFrame {
             @Override
             public void configEventOccurred(ConfigEvent e) {
                 String newIP = e.getIp();
-                if(!newIP.equals("Default"))
-                    JavaClient.setServerIP(newIP);
-                exit();
+                if(!newIP.equals("Default")){
+                    if(configPanel.isValid(newIP)) {
+                        JavaClient.setServerIP(newIP);
+                        exit();
+                    }
+                }
+                else {
+                    JavaClient.setServerIP(JavaClient.getDefualtIP());
+                    exit();
+                }
             }
         });
 

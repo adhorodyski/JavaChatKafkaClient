@@ -12,6 +12,7 @@ import java.util.concurrent.BlockingQueue;
 public class JavaClient {
 
     private static String serverIP;
+    private static final String defualtIP = "10.111.120.19";
     private static BlockingQueue<String> messages = new ArrayBlockingQueue<>(10);
 
     public static void main(String[] args) {
@@ -93,6 +94,10 @@ public class JavaClient {
 
     public static void setServerIP(String IP){
         serverIP = IP;
+    }
+
+    public static String getDefualtIP() {
+        return defualtIP;
     }
 
 }
