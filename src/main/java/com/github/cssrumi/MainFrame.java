@@ -30,7 +30,6 @@ public class MainFrame extends JFrame {
                                 message,
                                 formPanel.getToken())
                 );
-                System.out.println(java.lang.Thread.activeCount());
             }
         });
 

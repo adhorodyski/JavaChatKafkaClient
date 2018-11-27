@@ -3,6 +3,8 @@ package com.github.cssrumi.config;
 import com.github.cssrumi.JavaClient;
 
 import javax.swing.*;
+import javax.swing.border.Border;
+import javax.swing.border.TitledBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -14,6 +16,7 @@ public class ConfigPanel extends JPanel {
 
     public ConfigPanel() {
         init();
+        initLayout();
         actionInit();
     }
 
@@ -21,12 +24,18 @@ public class ConfigPanel extends JPanel {
         ipField = new JTextField(15);
         setBtn = new JButton("Set IP");
 
+        ipField.setText(JavaClient.getServerIP());
+    }
+
+    private void initLayout() {
+        Border innerBorder = BorderFactory.createTitledBorder("Server Config");
+        Border outerBorder = BorderFactory.createEmptyBorder(5,5,5,5);
+        setBorder(BorderFactory.createCompoundBorder(outerBorder, innerBorder));
+
         setLayout(new BorderLayout());
 
         add(ipField, BorderLayout.CENTER);
         add(setBtn, BorderLayout.EAST);
-
-        ipField.setText(JavaClient.getServerIP());
     }
 
     private void actionInit() {

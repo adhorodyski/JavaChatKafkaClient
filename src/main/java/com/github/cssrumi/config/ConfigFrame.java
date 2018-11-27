@@ -26,7 +26,7 @@ public class ConfigFrame extends JFrame {
 
         add(configPanel, BorderLayout.CENTER);
 
-        setSize(200, 80);
+        setSize(300, 100);
         setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         setVisible(true);
     }
