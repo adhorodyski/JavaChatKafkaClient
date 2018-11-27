@@ -19,7 +19,9 @@ public class ConfigFrame extends JFrame {
         configPanel.setUserListener(new ConfigListener() {
             @Override
             public void configEventOccurred(ConfigEvent e) {
-                JavaClient.setServerIP(e.getIp());
+                String newIP = e.getIp();
+                if(!newIP.equals("Default"))
+                    JavaClient.setServerIP(newIP);
                 exit();
             }
         });

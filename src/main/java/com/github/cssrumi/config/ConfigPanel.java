@@ -24,7 +24,7 @@ public class ConfigPanel extends JPanel {
         ipField = new JTextField(15);
         setBtn = new JButton("Set IP");
 
-        ipField.setText(JavaClient.getServerIP());
+        ipField.setText("Default");
     }
 
     private void initLayout() {
