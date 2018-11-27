@@ -20,7 +20,7 @@ public class Post {
         stringBuilder = new StringBuilder();
     }
 
-    public void send(JSONObject json){
+    public void sendJson(JSONObject json){
         jsonObject = json;
         stringBuilder.setLength(0);
         try {
@@ -32,7 +32,7 @@ public class Post {
             con.setDoInput(true);
             con.setConnectTimeout(5000);
             con.setReadTimeout(5000);
-            OutputStreamWriter wr = new OutputStreamWriter(con.getOutputStream());
+            OutputStreamWriter wr = new OutputStreamWriter(con.getOutputStream(), "utf-8");
             wr.write(jsonObject.toString());
             wr.flush();
             wr.close();
@@ -55,9 +55,9 @@ public class Post {
         }
     }
 
-    public void sendAsJson(String string){
+    public void sendString(String string){
         jsonObject = new JSONObject(string);
-        send(jsonObject);
+        sendJson(jsonObject);
     }
 
     public String getResult() {

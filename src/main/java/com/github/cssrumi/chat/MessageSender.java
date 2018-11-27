@@ -16,6 +16,6 @@ public class MessageSender {
     }
 
     public void send(JSONObject message){
-        messagePost.send(message);
+        messagePost.sendJson(message);
     }
 }

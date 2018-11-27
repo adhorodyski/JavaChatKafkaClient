@@ -19,7 +19,7 @@ public class UsernameChecker {
 
     public String ifValidGetToken(String username){
         String usernameJson = "{\"user\":\"" + username + "\"}";
-        setUserPost.sendAsJson(usernameJson);
+        setUserPost.sendString(usernameJson);
         String result = setUserPost.getResult();
         setToken(result);
         return token;

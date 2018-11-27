@@ -20,7 +20,6 @@ public class MainFrame extends JFrame {
 
         chatPanel = new ChatPanel();
         formPanel = new FormPanel();
-
         formPanel.setFormListener(new FormListener() {
             public void formEventOccurred(FormEvent e) {
                 String message = e.getMessage();

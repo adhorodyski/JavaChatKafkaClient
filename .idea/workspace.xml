@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c1286d3e-e653-4ec3-914d-c37ee3c134b6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/config/ConfigFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/config/ConfigFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/config/ConfigPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/config/ConfigPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/chat/MessageSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/chat/MessageSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/request/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/request/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/UsernameChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/cssrumi/user/UsernameChecker.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,7 +40,7 @@
         <counts>
           <entry key="MF" value="34" />
           <entry key="dummy" value="105" />
-          <entry key="java" value="8847" />
+          <entry key="java" value="8880" />
           <entry key="md" value="80" />
           <entry key="txt" value="72" />
           <entry key="xml" value="141" />
@@ -46,7 +48,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8847" />
+          <entry key="JAVA" value="8880" />
           <entry key="Manifest" value="34" />
           <entry key="PLAIN_TEXT" value="257" />
           <entry key="XML" value="141" />
@@ -56,7 +58,7 @@
         <counts>
           <entry key="MF" value="1" />
           <entry key="class" value="2" />
-          <entry key="java" value="74" />
+          <entry key="java" value="75" />
           <entry key="md" value="1" />
           <entry key="txt" value="1" />
           <entry key="xml" value="1" />
@@ -65,7 +67,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="74" />
+          <entry key="JAVA" value="75" />
           <entry key="Manifest" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="1" />
@@ -90,11 +92,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/MainFrame.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+                <state relative-caret-position="-55">
+                  <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -180,11 +182,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/config/ConfigPanel.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="197">
-                  <caret line="31" column="55" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
+                <state relative-caret-position="95">
+                  <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -209,11 +211,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/MainFrame.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="37" column="43" lean-forward="true" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
+                <state relative-caret-position="401">
+                  <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
                 </state>
               </provider>
             </entry>
@@ -239,8 +241,20 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pom.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="537">
+                <state relative-caret-position="285">
                   <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/request/Post.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-208">
+                  <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -363,12 +377,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/config/ConfigEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/kafka/KafkaClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/chat/Message.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/request/Post.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/chat/ChatPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/JavaClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/config/ConfigFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/config/ConfigPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/request/Post.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/cssrumi/MainFrame.java" />
       </list>
     </option>
   </component>
@@ -511,7 +525,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543317467452" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543319663022" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -638,13 +652,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32948583" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4946695" visible="true" weight="0.3286334" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49413645" visible="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39979014" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286334" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4946695" weight="0.34056398" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5053305" side_tool="true" visible="true" weight="0.3286334" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49413645" weight="0.34056398" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50586355" side_tool="true" visible="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3286334" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -654,7 +668,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" weight="0.25692964" />
+      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.25692964" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -825,16 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/request/Post.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/chat/Message.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
@@ -861,13 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -908,13 +905,6 @@
             <element signature="e#1784#1785#0" expanded="true" />
             <element signature="e#1823#1824#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -963,13 +953,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/config/ConfigPanel.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="31" column="55" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
+        <state relative-caret-position="285">
+          <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/request/Post.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-208">
+          <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/config/ConfigPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-55">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
         </state>
       </provider>
     </entry>
