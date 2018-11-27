@@ -3,7 +3,6 @@ package com.github.cssrumi.chat;
 import org.json.JSONObject;
 
 import javax.swing.*;
-import javax.swing.text.DefaultCaret;
 import java.awt.*;
 
 public class ChatPanel extends JPanel {

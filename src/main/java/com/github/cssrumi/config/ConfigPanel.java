@@ -1,8 +1,5 @@
 package com.github.cssrumi.config;
 
-import com.github.cssrumi.JavaClient;
-import com.github.cssrumi.request.Get;
-
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;

@@ -1,7 +1,5 @@
 package com.github.cssrumi.user;
 
-import com.github.cssrumi.JavaClient;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
