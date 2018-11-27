@@ -14,7 +14,7 @@
     <session id="-1139049929">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
@@ -152,7 +152,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/chat/Message.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="186">
+                <state relative-caret-position="-52">
                   <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -257,7 +257,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/JavaClient.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="356">
+                <state relative-caret-position="-58">
                   <caret line="68" column="44" lean-forward="true" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -504,7 +504,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543327791708" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543332044911" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -537,7 +537,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JAR Application.java-chat-kafka-client-1.0-SNAPSHOT-jar-with-dependencies.jar">
+  <component name="RunManager" selected="Application.JavaClient">
     <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Client" />
       <module name="JavaChatKafkaClient" />
@@ -588,8 +588,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JAR Application.java-chat-kafka-client-1.0-SNAPSHOT-jar-with-dependencies.jar" />
         <item itemvalue="Application.JavaClient" />
+        <item itemvalue="JAR Application.java-chat-kafka-client-1.0-SNAPSHOT-jar-with-dependencies.jar" />
         <item itemvalue="Application.Client (1)" />
         <item itemvalue="JAR Application.java-chat-kafka-client-1.0-SNAPSHOT.jar" />
         <item itemvalue="Application.KafkaChatConsumer" />
@@ -620,9 +620,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14925373" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14925373" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -631,13 +630,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32948583" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49200428" weight="0.3286334" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4914712" weight="0.3286334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39979014" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286334" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4914712" visible="true" weight="0.34056398" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50852877" side_tool="true" visible="true" weight="0.34056398" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49093816" visible="true" weight="0.34056398" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5090618" side_tool="true" visible="true" weight="0.34056398" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3286334" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -954,7 +953,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/JavaClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
+        <state relative-caret-position="-58">
           <caret line="68" column="44" lean-forward="true" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -978,7 +977,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/cssrumi/chat/Message.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
+        <state relative-caret-position="-52">
           <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
