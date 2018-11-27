@@ -6,8 +6,6 @@ import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.common.serialization.StringDeserializer;
 
-import java.io.InputStream;
-import java.math.BigInteger;
 import java.nio.charset.Charset;
 import java.time.Duration;
 import java.util.Arrays;

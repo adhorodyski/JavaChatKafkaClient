@@ -15,7 +15,6 @@ public class Message {
     private static final char[] replaceCharactersChar = replaceCharacters.toCharArray();
 
     public static JSONObject createJsonMessage(String username, String message, String token) {
-        message = replaceSpecialCharacters(message);
         jsonObject = new JSONObject();
         jsonObject.put("user", username);
         jsonObject.put("message", message);

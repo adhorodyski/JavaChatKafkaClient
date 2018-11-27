@@ -1,8 +1,11 @@
 package com.github.cssrumi;
 
 import com.github.cssrumi.chat.Message;
+import com.github.cssrumi.config.ConfigFrame;
 import com.github.cssrumi.kafka.KafkaClient;
 
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
@@ -11,9 +14,35 @@ public class JavaClient {
     private static String serverIP;
     private static BlockingQueue<String> messages = new ArrayBlockingQueue<>(10);
 
+    private static Thread configFrameThread;
+
     public static void main(String[] args) {
 
         setServerIP("10.111.120.19");
+        init();
+    }
+
+    private static void init() {
+        configFrameThread = new Thread(new Runnable() {
+            private ConfigFrame configFrame;
+            @Override
+            public void run() {
+                configFrame = new ConfigFrame();
+                configFrame.addWindowListener(new WindowAdapter() {
+                    @Override
+                    public void windowClosing(WindowEvent e) {
+                        super.windowClosing(e);
+                        initMain();
+                        exitConfig();
+                    }
+                });
+            }
+        });
+
+        configFrameThread.start();
+    }
+
+    public static void initMain() {
         KafkaClient kafkaClient = new KafkaClient(messages);
         kafkaClient.setBootstrapServers(getServerIP() + ":9092");
         kafkaClient.setRandomGroup();
@@ -31,7 +60,7 @@ public class JavaClient {
                 }
             }
 
-            public void sendMessage(String message){
+            private void sendMessage(String message){
                 mainFrame.appendMessage(message);
             }
 
@@ -60,7 +89,10 @@ public class JavaClient {
 
         mainFrameThread.start();
         kafkaThread.start();
+    }
 
+    private static void exitConfig() {
+        configFrameThread.interrupt();
     }
 
     public static String getServerIP(){
